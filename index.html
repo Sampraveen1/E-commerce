@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Hello, Boxicons!</title>
+    <link rel="Stylesheet" href="css/style.css">
+   
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="head">
+                <h1>Nostra</h1>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="bar" onclick="showsidebar()">
+               <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="logo" onclick="hidesidebar()">
+            <i class='bx bx-x'></i>
+        </div>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Collection</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="hide-para">
+
+            <div>
+            <h1>Level up your Style</h1>
+            <p>with our stunning collection</p>
+            <button>Shop now</button>
+            </div>
+
+           <div>
+                <img src="media/fashion.jpg" width="300" >
+            </div>
+
+    </div>
+
+    <div class="services">
+      <div class="service-contain-1">
+         <div>
+            <h2>We provide Best</h2>
+            <h2>Customer Experience</h2>
+        </div>
+
+        <div>
+            <p>||We ensure that our customer have the best shopping experience</p>
+        </div>
+
+      </div>
+
+        <div class="service-contain-2">
+            <div>
+                <i class='bx bx-purchase-tag'></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates velit expedita reiciendis porro? Ea dolorem pariatur, doloribus soluta voluptatum similique! Eos.</p>
+            </div>
+
+            <div>
+                <i class='bx bx-wink-tongue'></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates velit expedita reiciendis porro? Ea dolorem pariatur, doloribus soluta voluptatum similique! Eos.</p>
+            </div>
+
+            <div>
+                <i class='bx bx-gift' ></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates velit expedita reiciendis porro? Ea dolorem pariatur, doloribus soluta voluptatum similique! Eos.</p>
+            </div>
+        </div>
+      
+    </div>
+ 
+ 
+<div class="arrival">
+    <h2>New Arrival</h2>
+    <div class="new-arrival">
+        <div class="arrival-collection">
+            <img src="media/fashion10.jpg" alt="" width="300" height="300" border="2px">
+            <button>Show Now<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+
+        <div class="arrival-collection">
+            <img src="media/fashion8.jpg" alt="" width="300" height="300" border="2px">
+            <button>Show Now<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+
+        <div class="arrival-collection">
+            <img src="media/cap.avif" alt="" width="300" height="300" border="2px">
+            <button>Show Now<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+
+        <div class="arrival-collection">
+            <img src="media/fashion11.jpg" alt=""  width="300" height="300" border="2px">
+            <button>Show Now<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival">
+    <h2>Most Wanted</h2>
+    <div class="new-arrival">
+        <div class="arrival-collection">
+            <img src="media/checked.jpg" alt="" width="300" height="300" border="2px">
+            <button>Show Now<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+
+        <div class="arrival-collection">
+            <img src="media/pants1.webp" alt="" width="300" height="300" border="2px">
+            <button>Show Now<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+
+        <div class="arrival-collection">
+            <img src="media/su.jpg" alt="" width="300" height="300" border="2px">
+            <button>Show Now<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+
+        <div class="arrival-collection">
+            <img src="media/kotu.jpg" alt="" width="300" height="300" border="2px">
+            <button>Show Now<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+    </div>
+</div>
+
+<div class="news">
+    <h2>Join our News Letter</h2>
+    <p>Signup for our email newsletter to get exclusive discount and updates and more</p>
+
+    <div>
+        <input type="text" class="search">
+    </div>
+
+    <div>
+        <button>Subscribe<i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
+
+<div class="footer">
+    <h2>Nostra</h2>
+    <p>The standard chunk of lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+    <div class="icons">
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-twitter' ></i>
+        <i class='bx bxl-facebook-circle'></i>
+    </div>
+
+    <p>@ 2024 Nostra.com</p>
+</div>
+
+
+   
+   
+   
+   
+   
+   <script>
+        var sidebar = document.querySelector(".sidebar")
+
+        function showsidebar(){
+            sidebar.style.left="0"
+        }
+
+        function hidesidebar(){
+            sidebar.style.left = "-40%"
+        }
+    </script>
+      
+</body>
+</html>

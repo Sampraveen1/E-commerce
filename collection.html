@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Hello, Boxicons!</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="head">
+                <h1>Nostra</h1>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="bar" onclick="showsidebar(event)">
+               <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="logo" onclick="hidesidebar()">
+            <i class='bx bx-x'></i>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" placeholder="Search" id="search">
+            <i class='bx bx-search'></i>
+        </form>
+        
+        <div class="products" id="products">
+            <div class="product-box">
+                <img src="media/white1.jpg" alt="" width="300" height="300" >
+                <p>white shirt</p>
+            </div>
+    
+            <div class="product-box">
+                <img src="media/black1.webp" alt=""  width="300" height="300">
+                <p>Black shirt</p>
+            </div>
+    
+            <div class="product-box">
+                <img src="media/red.jpg" alt="" width="300" height="300" >
+                <p>Red shirt</p>
+            </div>
+    
+            <div class="product-box">
+                <img src="media/blue.jpg" alt=""  width="300" height="300">
+                <p>Blue shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="media/t-shirt.webp" alt="" width="300" height="300">
+                <p>T-shirt</p>
+            </div>
+    
+            <div class="product-box">
+                <img src="media/checked2.jpg" alt="" width="300" height="300">
+                <p>Checked shirt</p>
+            </div>
+    
+            <div class="product-box">
+                <img src="media/pants2.jpg" alt="" width="300" height="300" border="1px">
+                <p>pants</p>
+            </div>
+    
+            <div class="product-box">
+                <img src="media/hoodies.jpg" alt="" width="300" height="300">
+                <p>hoodie</p>
+            </div>
+
+            <div class="product-box">
+                <img src="media/sarees.avif" alt="" width="300" height="300">
+                <p>Sarees</p>
+            </div>
+
+            <div class="product-box">
+                <img src="media/cap1.jpg" alt="" width="300" height="300" border="1px">
+                <p>cap</p>
+            </div>
+
+            <div class="product-box">
+                <img src="media/jeans.jpg" alt="" width="300" height="300" >
+                <p>jeans</p>
+            </div>
+
+            <div class="product-box">
+                <img src="media/shoes.jpg" alt="" width="300" height="300" border="1px">
+                <p>Shoe</p>
+            </div>
+        </div>
+
+    </div>
+
+
+<div class="footer">
+    <h2>Nostra</h2>
+    <p>The standard chunk of lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+    <div class="icons">
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-twitter' ></i>
+        <i class='bx bxl-facebook-circle'></i>
+    </div>
+
+    <p>@ 2024 Nostra.com</p>
+</div>
+
+
+<script>
+    var sidebar = document.querySelector(".sidebar")
+
+    function showsidebar(){
+        sidebar.style.left="0"
+    }
+
+    function hidesidebar(){
+        sidebar.style.left = "-40%"
+    }
+
+   var productContainer = document.getElementById("products")
+   var search = document.getElementById("search");
+   var elements = productContainer.querySelectorAll("div")
+
+   search.addEventListener("keyup",function(){
+    var enteredValue = event.target.value.toUpperCase()
+
+      for(count=0;count<elements.length;count=count+1)
+      {
+        var productName = elements[count].querySelector("p").textContent
+        if(productName.toUpperCase().indexOf(enteredValue)<0){
+            elements[count].style.display= "none"
+        }
+        else {
+            elements[count].style.display= "block"
+        }
+      }
+   })
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>
